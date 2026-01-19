@@ -2,8 +2,8 @@
 
 [🔗Live Demo🔗](https://portfolio-nine-lac-39.vercel.app/)
 
+[![Portfolio Website](assets/portfolio.png)](assets/portfolio.png)
 
-[![Portfolio Website](portfolio.png)](https://portfolio-nine-lac-39.vercel.app/)
 
 
 <div align="center">
@@ -24,7 +24,7 @@
      </thead>
     <tbody>
          <tr>
-            <td><a href="https://github.com/19sajib/portfolio"</a>Project</td>
+            <td><a href="https://github.com/akash293/portfolio"></a>Project</td>
             <td><img alt="Stars" src="https://img.shields.io/github/stars/19sajib/portfolio?style=flat&logo=github"/></td>
              <td><img alt="Forks" src="https://img.shields.io/github/forks/19sajib/portfolio?style=flat&logo=github"/></td>
             <td><img alt="Issues" src="https://img.shields.io/github/issues/19sajib/portfolio?style=flat&logo=github"/></td>
