@@ -39,7 +39,7 @@ const About = () => {
                   <br />
                   <br />
                   I have a passion for working
-                  with <b className="yellow">React js, php , Node js ,MangoDB,</b> and
+                  with <b className="yellow">React js, php , Node js ,MongoDB,</b> and
                   <i>
                     <b className="yellow">
                       {" "}
