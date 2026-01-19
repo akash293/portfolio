@@ -8,8 +8,6 @@ import {
 } from "react-icons/di";
 import {
   SiMaterialui,
-  SiGraphql,
-  SiSolidity,
   SiRedux,
   SiMongodb,
   SiHtml5
@@ -36,12 +34,8 @@ const Techstack = () => {
       <Col xs={4} md={2} className="tech-icons">
         <SiMongodb />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGraphql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
+     
+     
       <Col xs={4} md={2} className="tech-icons">
         <SiMaterialui />
       </Col>

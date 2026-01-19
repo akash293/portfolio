@@ -25,7 +25,7 @@ const Footer = () => {
             <ul className="footer-icons">
               <li className="social-icons">
                 <a
-                  href="https://github.com/19sajib"
+                  href="https://github.com/akash293"
                   style={{ color: "white" }}
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -36,7 +36,7 @@ const Footer = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/19sajib"
+                  href="https://twitter.com"
                   style={{ color: "white" }}
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -47,7 +47,7 @@ const Footer = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/19sajib/"
+                  href="https://www.linkedin.com/in/akash-a-90619627b/"
                   style={{ color: "white" }}
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -58,7 +58,7 @@ const Footer = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://leetcode.com/19sajib/"
+                  href="https://leetcode.com/u/akash455/"
                   style={{ color: "white" }}
                   target="_blank" 
                   rel="noopener noreferrer"

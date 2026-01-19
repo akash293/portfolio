@@ -764,3 +764,8 @@ html {
   .fork-btn-inner::after {
     display: none !important;
   }
+
+  .resume-section canvas {
+  margin: 0 auto;
+  display: block;
+}
