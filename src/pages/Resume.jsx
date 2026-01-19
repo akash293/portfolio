@@ -10,8 +10,8 @@ import pdf from "../assets/akash.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 
-pdfjs.GlobalWorkerOptions.workerSrc = 
-  `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// PDF.js worker
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -22,16 +22,25 @@ const Resume = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Function to download PDF reliably
+  const handleDownload = () => {
+    fetch(pdf)
+      .then((res) => res.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Akash_Resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+      })
+      .catch((err) => console.error("Download failed", err));
+  };
+
   return (
     <Container fluid className="resume-section">
       <Particle />
-
-      {/* Top Download Button */}
-      <Row className="justify-content-center mb-3">
-        <Button variant="primary" href={pdf} target="_blank">
-          <AiOutlineDownload /> &nbsp;Download Resume
-        </Button>
-      </Row>
 
       {/* PDF Preview */}
       <Row className="resume justify-content-center">
@@ -40,9 +49,9 @@ const Resume = () => {
         </Document>
       </Row>
 
-      {/* Bottom Download Button */}
+      {/* Download Button */}
       <Row className="justify-content-center mt-3">
-        <Button variant="primary" href={pdf} target="_blank">
+        <Button variant="primary" onClick={handleDownload}>
           <AiOutlineDownload /> &nbsp;Download Resume
         </Button>
       </Row>
