@@ -769,3 +769,14 @@ html {
   margin: 0 auto;
   display: block;
 }
+
+/* Prevent PDF canvas from blocking clicks */
+.react-pdf__Page__canvas {
+  pointer-events: none;
+}
+
+/* Make sure button stays clickable */
+.download-btn {
+  position: relative;
+  z-index: 20;
+}
